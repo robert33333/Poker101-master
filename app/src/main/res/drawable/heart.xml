@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="64dp"
+    android:width="64dp"
+    android:viewportHeight="600"
+    android:viewportWidth="600" >
+    <group
+        android:name="heartGroup">
+        <path
+            android:name="heartPath"
+            android:fillColor="#002366"
+            android:pathData="M300,410
+                              A60,80 45,0,1 130,155
+                              M300,410
+                              A82,105 130,0,0 475,155
+                              M300,410
+                              L130,155
+                              L475,155
+                              L300,410
+                              M130,155
+                              L300,5
+                              L475,155
+                              M300,0
+                              L283,21
+                              M300,0
+                              L317,21
+                              L283,21 Z" />
+    </group>
+    <group
+        android:name="triangeGroup">
+        <path
+            android:name="trianglePath"
+            android:fillColor="#002366"
+            android:pathData="M300,395
+                              L200,550
+                              L400,550 Z" />
+    </group>
+    <group
+        android:name="triangeGroup2">
+        <path
+            android:name="trianglePath2"
+            android:fillColor="#002366"
+            android:pathData="M190,550
+                              L215,525
+                              L215,550
+                              M195,545
+                              L225,510
+                              L225,550
+                              M410,550
+                              L385,525
+                              L385,550
+                              M405,550
+                              L375,510
+                              L375,550 Z" />
+    </group>
+    <group
+        android:name="starGroup">
+        <path
+            android:name="starPath"
+            android:fillColor="#FFFFFF"
+            android:pathData="M300,140
+                              L270,225
+                              L200,225
+                              L265,275
+                              L225,365
+                              L300,305
+                              L375,365
+                              L335,275
+                              L400,225
+                              L330,225 Z" />
+    </group>
+</vector>
+

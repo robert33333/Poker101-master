@@ -1,0 +1,67 @@
+<resources>
+    <string name="facebook_app_id">424639548345942</string>
+    <string name="fb_login_protocol_scheme">fb424639548345942</string>
+
+
+    <string name="app_name">Poker101</string>
+    <string name="btn_log_in">Log in with Facebook</string>
+    <string name="btn_play">Play</string>
+    <string name="btn_profile">Profile</string>
+    <string name="btn_settings">Settings</string>
+    <string name="btn_logout">Logout</string>
+    <string name="text_placeholder">Text Placeholder</string>
+
+    <string name="friends_list">Friends List</string>
+
+
+    <string name="log_in_error">Log in failed</string>
+    <string name="log_in_cancel">Log in has benn canceled</string>
+
+
+    <string name="fragment_settings">Settings</string>
+
+
+    <string name="theme_prompt">Choose a theme:</string>
+    <string name="card_back_prompt">Choose a card back:</string>
+
+    <string-array name="theme_arrays">
+        <item>Default</item>
+        <item>Dark</item>
+        <item>Light</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="play_with_a_friend">Play with a friend</string>
+
+    <string name="play_button">Play</string>
+
+    <string name="wait_response">Waiting for your friend to respond...</string>
+    <string name="invite_response">You have received an invitation to play from your friend.</string>
+    <string name="invite_decline">Press back to decline.</string>
+
+    <string name="btn_check">Check</string>
+    <string name="btn_call">Call</string>
+    <string name="btn_fold">Fold</string>
+    <string name="btn_raise">Raise</string>
+
+    <string name="btn_minus">-</string>
+    <string name="btn_plus">+</string>
+    <string name="txt_raise">1000</string>
+    <string name="your_turn">It\'s your turn</string>
+    <string name="opponent_turn">It\'s your opponent turn</string>
+    <string name="you_win">You win!</string>
+    <string name="opponent_win">Opponent wins!</string>
+    <string name="draw">Draw!</string>
+    <string name="all_in">All in!</string>
+    <string name="you_checked">You checked!</string>
+    <string name="you_called">You called!</string>
+    <string name="you_raised">You raised!</string>
+    <string name="opponent">Opponent</string>
+
+    <string name="profile_bani">Bani:</string>
+    <string name="opponent_folded">Opponent folded!</string>
+
+
+</resources>

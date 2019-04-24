@@ -1,0 +1,45 @@
+<resources>
+
+    <style name="Default" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textColor">@color/colorDefaultText</item>
+        <item name="android:buttonStyle">@style/ButtonDefault</item>
+        <item name="android:background">@color/colorDefaultBackground</item>
+        <item name="android:spinnerStyle">@style/SpinnerDefault</item>
+    </style>
+    <style name="ButtonDefault" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/colorDefaultText</item>
+        <item name="android:backgroundTint">@color/colorDefaultButton</item>
+    </style>
+    <style name="SpinnerDefault" parent="Widget.AppCompat.Spinner">
+        <item name="android:backgroundTint">@color/colorDefaultButton</item>
+    </style>
+
+    <style name="Dark" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textColor">@color/colorDarkText</item>
+        <item name="android:buttonStyle">@style/ButtonDark</item>
+        <item name="android:background">@color/colorDarkBackground</item>
+        <item name="android:spinnerStyle">@style/SpinnerDark</item>
+    </style>
+    <style name="ButtonDark" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/colorDarkText</item>
+        <item name="android:backgroundTint">@color/colorDarkButton</item>
+    </style>
+    <style name="SpinnerDark" parent="Widget.AppCompat.Spinner">
+        <item name="android:backgroundTint">@color/colorDarkButton</item>
+    </style>
+
+    <style name="Light" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textColor">@color/colorLightText</item>
+        <item name="android:buttonStyle">@style/ButtonLight</item>
+        <item name="android:background">@color/colorLightBackground</item>
+        <item name="android:spinnerStyle">@style/SpinnerLight</item>
+    </style>
+    <style name="ButtonLight" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/colorLightText</item>
+        <item name="android:backgroundTint">@color/colorLightButton</item>
+    </style>
+    <style name="SpinnerLight" parent="Widget.AppCompat.Spinner">
+        <item name="android:backgroundTint">@color/colorLightButton</item>
+    </style>
+
+</resources>
