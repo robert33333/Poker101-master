@@ -374,17 +374,8 @@ public class GameActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         if (goBack) {
+            GameActivity.goBack = false;
             User.goToMenu("fromGameEnd");
-        }
-    }
-
-    @Override
-    protected void onDestroy() {
-        try {
-            sendCommand(new Comanda("fold", User.user.getString("id")));
-            super.onDestroy();
-        } catch (JSONException e) {
-            e.printStackTrace();
         }
     }
 }
