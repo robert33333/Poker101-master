@@ -82,8 +82,8 @@ public class Facebook_Log_In_Fragment extends Fragment {
                                             if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
                                                 calendar = Calendar.getInstance();
                                                 calendar.setTimeInMillis(System.currentTimeMillis());
-                                                calendar.set(Calendar.HOUR_OF_DAY, 10);
-                                                calendar.set(Calendar.MINUTE, 0);
+                                                calendar.set(Calendar.HOUR_OF_DAY, 11);
+                                                calendar.set(Calendar.MINUTE, 55);
 
                                                 /* Repeating on every 1 day interval */
                                                 manager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),

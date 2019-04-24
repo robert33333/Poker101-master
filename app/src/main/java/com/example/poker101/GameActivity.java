@@ -60,6 +60,25 @@ public class GameActivity extends AppCompatActivity {
         if (tura.winner != null) {
             opponent_chips_played_text.setText(Integer.toString(tura.opponent_bani));
             Resources res = User.context.getResources();
+            for (int i = 0; i < tura.carti.size(); i++) {
+                if (tura.carti.get(i) != null) {
+                    String cardName = "_" + tura.carti.get(i).getNumar() + tura.carti.get(i).getTip() + "";
+                    int resID1 = res.getIdentifier(cardName, "drawable", User.context.getPackageName());
+                    if (i == 0) {
+                        Picasso.get().load(resID1).fit().into(dealerCard1);
+                    } else if (i == 1) {
+                        Picasso.get().load(resID1).fit().into(dealerCard2);
+                    } else if (i == 2) {
+                        Picasso.get().load(resID1).fit().into(dealerCard3);
+                    } else if (i == 3) {
+                        Picasso.get().load(resID1).fit().into(dealerCard4);
+                    } else if (i == 4) {
+                        Picasso.get().load(resID1).fit().into(dealerCard5);
+                    }
+                } else {
+                    break;
+                }
+            }
             if (tura.opponent_carte1 != null) {
                 String card1Name = "_" + tura.opponent_carte1.getNumar() + tura.opponent_carte1.getTip() + "";
                 int resID1 = res.getIdentifier(card1Name, "drawable", User.context.getPackageName());
@@ -131,8 +150,8 @@ public class GameActivity extends AppCompatActivity {
             opponent_chips_played_text.setText(Integer.toString(tura.opponent_bani));
             int pariati1 = Integer.parseInt(chips_played_text.getText().toString());
             int total = Integer.parseInt(chips_total_text.getText().toString());
-            int pariati2 = Integer.parseInt(chips_played_text.getText().toString());
-            if ((total - (pariati2 - pariati1)) < 0) {
+            int pariati2 = Integer.parseInt(opponent_chips_played_text.getText().toString());
+            if ((total - (pariati2 - pariati1)) <= 0) {
                 btn_call.setText(R.string.all_in);
             }
         }
@@ -262,12 +281,13 @@ public class GameActivity extends AppCompatActivity {
             public void onClick(View view) {
                 try {
                     int pariati1 = Integer.parseInt(chips_played_text.getText().toString());
-                    chips_played_text.setText(opponent_chips_played_text.getText());
                     int total = Integer.parseInt(chips_total_text.getText().toString());
-                    int pariati2 = Integer.parseInt(chips_played_text.getText().toString());
-                    if ((total - (pariati2 - pariati1)) < 0) {
+                    int pariati2 = Integer.parseInt(opponent_chips_played_text.getText().toString());
+                    if ((total - (pariati2 - pariati1)) <= 0) {
                         chips_total_text.setText("0");
+                        chips_played_text.setText(Integer.toString(total + pariati1));
                     } else {
+                        chips_played_text.setText(opponent_chips_played_text.getText());
                         chips_total_text.setText(Integer.toString(total - (pariati2 - pariati1)));
                     }
                     sendCommand(new Comanda("call", User.user.getString("id")));
